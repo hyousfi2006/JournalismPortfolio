@@ -1,0 +1,634 @@
+
+*{
+    margin-inline-start: 10;
+    padding: 10;
+    font-family: sans-serif;
+}
+#welcome{
+   /* background-image: url(img2.jpg);*/
+   background-color:rgb(247, 230, 255); 
+   padding-top: 20px;
+    padding-left: 20px;
+    padding-right:20px;
+    padding-bottom:20px;
+}
+#welcome h1{
+    color: rgb(106, 50, 130);
+    font-size: 35px;
+    -webkit-text-stroke: 1.5px;
+    -webkit-text-stroke-color:whitesmoke;
+    text-align: center;
+}
+
+#project h1{
+    color: #fff;
+    font-size: 125px;
+    -webkit-text-stroke: 5px;
+    -webkit-text-stroke-color:rgb(106, 50, 130);
+    text-align: center;
+}
+
+#welcome span{
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color:rgb(106, 50, 130);
+    color: whitesmoke;
+    font-size: 40px;
+    text-align: center;
+}
+#welcome p{
+    color: #fff;
+    text-align: center;
+}
+#welcome img {
+    display: inline-block;
+    vertical-align: middle; /* or top or bottom */
+    outline-style: dotted;
+    outline-width: 8px;
+    outline-color: rgb(106, 50, 130);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.text {
+    padding-left: 20px;
+    display: inline-block;
+    vertical-align: middle; /* or top or bottom */
+    font-size: 30px;
+    -webkit-text-fill-color: rgb(65, 16, 86);
+    -webkit-text-stroke: 0.25px;
+    -webkit-text-stroke-color:whitesmoke;
+}
+
+#title{
+    -webkit-text-stroke: 5px;
+    -webkit-text-stroke-color:rgb(106, 50, 130);
+    color: whitesmoke;
+    text-align: center;
+    font-size: 165px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    padding-top: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#project img{
+    padding-top: 20px;
+    height: 150px;
+    align-self: center;
+    padding-bottom:35px;
+    padding-left:2px;
+}
+
+#contact{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(106, 50, 130);
+    text-align: center;
+}
+#contact h1{
+    color: whitesmoke;
+    font-size: 30px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(167, 131, 190);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#contact h4{
+    color: #fff;
+}
+#contact a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#paragraph{
+    object-position: right;
+}
+
+.collpasible{
+    max-width:450px;
+    overflow: hidden;
+    font-weight: 500;
+
+}
+
+.collapsible input{
+    display:none;
+}
+
+.collapsible label{
+    position:relative;
+    font-weight:600;
+    background:white;
+    box-shadow:0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgb(0,0,0,0.08);
+    color: rgb(106, 50, 130);
+    ;
+    display: block;
+    margin-bottom:10px;
+    cursor:pointer;
+    padding:15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapsible label:after{
+    content:"";
+    position:absolute;
+    right:15px;
+    top:20px;
+    width:18px;
+    height:18px;
+    background-image:url(arrow.jpg) no-repeat 0 0;
+    transition: all 0.3s ease;
+}
+
+.collapsible input:checked+label:after{
+    transform:rotate(90deg);
+}
+
+.collapsible-text{
+    max-height:1px;
+    overflow:hidden;
+    border-radius:4px;
+    line-height:1.4;
+    position:relative;
+    top:-100%;
+    opacity:0.5;
+    transition: all 0.3s ease;
+}
+
+.collapsible input:checked ~ .collapsible-text{
+    max-height:1100px;
+    padding-bottom: 25px;
+    background:white;
+    box-shadow:0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgb(0,0,0,0.08);
+    opacity: 1;
+    top:0;
+}
+
+.collapsible-text h2{
+    margin-bottom:10px;
+    padding:15px 15px 0;
+    color: rgb(106, 50, 130); 
+}
+
+.collapsible-text p{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.collpasible2{
+    max-width:450px;
+    overflow: hidden;
+    font-weight: 500;
+
+}
+
+.collapsible2 input{
+    display:none;
+}
+
+.collapsible2 label{
+    position:relative;
+    font-weight:600;
+    background:white;
+    box-shadow:0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgb(0,0,0,0.08);
+    color: rgb(106, 50, 130);
+    display: block;
+    margin-bottom:10px;
+    cursor:pointer;
+    padding:15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapsible2 label:after{
+    content:"";
+    position:absolute;
+    right:15px;
+    top:20px;
+    width:18px;
+    height:18px;
+    background-image:url(arrow.jpg) no-repeat 0 0;
+    transition: all 0.3s ease;
+}
+
+.collapsible2 input:checked+label:after{
+    transform:rotate(90deg);
+}
+
+.collapsible2-text{
+    max-height:1px;
+    overflow:hidden;
+    border-radius:4px;
+    line-height:1.4;
+    position:relative;
+    top:-100%;
+    opacity:0.5;
+    transition: all 0.3s ease;
+}
+
+.collapsible2 input:checked ~ .collapsible2-text{
+    max-height:800px;
+    padding-bottom: 25px;
+    background:white;
+    box-shadow:0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgb(0,0,0,0.08);
+    opacity: 1;
+    top:0;
+}
+
+.collapsible2-text h2{
+    margin-bottom:10px;
+    padding:15px 15px 0;
+    color: rgb(106, 50, 130); 
+}
+
+.collapsible2-text p{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+.collpasible3{
+    max-width:450px;
+    overflow: hidden;
+    font-weight: 500;
+
+}
+
+.collapsible3 input{
+    display:none;
+}
+
+.collapsible3 label{
+    position:relative;
+    font-weight:600;
+    background:white;
+    box-shadow:0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgb(0,0,0,0.08);
+    color: rgb(106, 50, 130);
+    display: block;
+    margin-bottom:10px;
+    cursor:pointer;
+    padding:15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapsible3 label:after{
+    content:"";
+    position:absolute;
+    right:15px;
+    top:20px;
+    width:18px;
+    height:18px;
+    background-image:url(arrow.jpg) no-repeat 0 0;
+    transition: all 0.3s ease;
+}
+
+.collapsible3 input:checked+label:after{
+    transform:rotate(90deg);
+}
+
+.collapsible3-text{
+    max-height:1px;
+    overflow:hidden;
+    border-radius:4px;
+    line-height:1.4;
+    position:relative;
+    top:-100%;
+    opacity:0.5;
+    transition: all 0.3s ease;
+}
+
+.collapsible3 input:checked ~ .collapsible3-text{
+    max-height:800px;
+    padding-bottom: 25px;
+    background:white;
+    box-shadow:0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgb(0,0,0,0.08);
+    opacity: 1;
+    top:0;
+}
+
+.collapsible3-text h2{
+    margin-bottom:10px;
+    padding:15px 15px 0;
+    color: rgb(106, 50, 130); 
+}
+
+.collapsible3-text p{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+.collpasible4{
+    max-width:450px;
+    overflow: hidden;
+    font-weight: 500;
+
+}
+
+.collapsible4 input{
+    display:none;
+}
+
+.collapsible4 label{
+    position:relative;
+    font-weight:600;
+    background:white;
+    box-shadow:0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgb(0,0,0,0.08);
+    color:rgb(106, 50, 130);
+    display: block;
+    margin-bottom:10px;
+    cursor:pointer;
+    padding:15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapsible4 label:after{
+    content:"";
+    position:absolute;
+    right:15px;
+    top:20px;
+    width:18px;
+    height:18px;
+    background-image:url(arrow.jpg) no-repeat 0 0;
+    transition: all 0.3s ease;
+}
+
+.collapsible4 input:checked+label:after{
+    transform:rotate(90deg);
+}
+
+.collapsible4-text{
+    max-height:1px;
+    overflow:hidden;
+    border-radius:4px;
+    line-height:1.4;
+    position:relative;
+    top:-100%;
+    opacity:0.5;
+    transition: all 0.3s ease;
+}
+
+.collapsible4 input:checked ~ .collapsible4-text{
+    max-height:800px;
+    padding-bottom: 25px;
+    background:white;
+    box-shadow:0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgb(0,0,0,0.08);
+    opacity: 1;
+    top:0;
+}
+
+.collapsible4-text h2{
+    margin-bottom:10px;
+    padding:15px 15px 0;
+    color: rgb(106, 50, 130); 
+}
+
+.collapsible4-text p{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+
+.collpasible5{
+    max-width:450px;
+    overflow: hidden;
+    font-weight: 500;
+
+}
+
+.collapsible5 input{
+    display:none;
+}
+
+.collapsible5 label{
+    position:relative;
+    font-weight:600;
+    background:white;
+    box-shadow:0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgb(0,0,0,0.08);
+    color: rgb(106, 50, 130);
+    display: block;
+    margin-bottom:10px;
+    cursor:pointer;
+    padding:15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapsible5 label:after{
+    content:"";
+    position:absolute;
+    right:15px;
+    top:20px;
+    width:18px;
+    height:18px;
+    background-image:url(arrow.jpg) no-repeat 0 0;
+    transition: all 0.3s ease;
+}
+
+.collapsible5 input:checked+label:after{
+    transform:rotate(90deg);
+}
+
+.collapsible5-text{
+    max-height:1px;
+    overflow:hidden;
+    border-radius:4px;
+    line-height:1.4;
+    position:relative;
+    top:-100%;
+    opacity:0.5;
+    transition: all 0.3s ease;
+}
+
+.collapsible5 input:checked ~ .collapsible5-text{
+    max-height:800px;
+    padding-bottom: 25px;
+    padding-left: 150px;
+    background:white;
+    box-shadow:0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgb(0,0,0,0.08);
+    opacity: 1;
+    top:0;
+}
+
+.collapsible5-text h2{
+    margin-bottom:10px;
+    padding:15px 15px 0;
+    color: rgb(106, 50, 130); 
+}
+
+.collapsible5-text p{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a{
+    color: rgb(106, 50, 130); 
+}
+
+
+
+
+
+.collpasible6{
+    max-width:450px;
+    overflow: hidden;
+    font-weight: 500;
+
+}
+
+.collapsible6 input{
+    display:none;
+}
+
+.collapsible6 label{
+    position:relative;
+    font-weight:600;
+    background:white;
+    box-shadow:0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgb(0,0,0,0.08);
+    color: rgb(106, 50, 130);
+    display: block;
+    margin-bottom:10px;
+    cursor:pointer;
+    padding:15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapsible6 label:after{
+    content:"";
+    position:absolute;
+    right:15px;
+    top:20px;
+    width:18px;
+    height:18px;
+    background-image:url(arrow.jpg) no-repeat 0 0;
+    transition: all 0.3s ease;
+}
+
+.collapsible6 input:checked+label:after{
+    transform:rotate(90deg);
+}
+
+.collapsible6-text{
+    max-height:1px;
+    overflow:hidden;
+    border-radius:4px;
+    line-height:1.4;
+    position:relative;
+    top:-100%;
+    opacity:0.5;
+    transition: all 0.3s ease;
+}
+
+.collapsible6 input:checked ~ .collapsible6-text{
+    max-height:900px;
+    padding-bottom: 25px;
+    background:white;
+    box-shadow:0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgb(0,0,0,0.08);
+    opacity: 1;
+    top:0;
+}
+
+.collapsible6-text h2{
+    margin-bottom:10px;
+    padding:15px 15px 0;
+    color: rgb(106, 50, 130); 
+}
+
+.collapsible6-text p{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+
+
+
+.collpasible1{
+    max-width:450px;
+    overflow: hidden;
+    font-weight: 500;
+
+}
+
+.collapsible1 input{
+    display:none;
+}
+
+.collapsible1 label{
+    position:relative;
+    font-weight:600;
+    background:white;
+    box-shadow:0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgb(0,0,0,0.08);
+    color: rgb(106, 50, 130);
+    display: block;
+    margin-bottom:10px;
+    cursor:pointer;
+    padding:15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapsible1 label:after{
+    content:"";
+    position:absolute;
+    right:15px;
+    top:20px;
+    width:18px;
+    height:18px;
+    background-image:url(arrow.jpg) no-repeat 0 0;
+    transition: all 0.3s ease;
+}
+
+.collapsible1 input:checked+label:after{
+    transform:rotate(90deg);
+}
+
+.collapsible1-text{
+    max-height:1px;
+    overflow:hidden;
+    border-radius:4px;
+    line-height:1.4;
+    position:relative;
+    top:-100%;
+    opacity:0.5;
+    transition: all 0.3s ease;
+}
+
+.collapsible1 input:checked ~ .collapsible1-text{
+    max-height:800px;
+    padding-bottom: 25px;
+    background:white;
+    box-shadow:0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgb(0,0,0,0.08);
+    opacity: 1;
+    top:0;
+}
+
+.collapsible1-text h2{
+    margin-bottom:10px;
+    padding:15px 15px 0;
+    color: rgb(106, 50, 130); 
+}
+
+.collapsible1-text p{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+html {
+    background-color:rgb(247, 230, 255); 
+    background-image: url(img2.jpg);
+
+}
